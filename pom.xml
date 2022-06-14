@@ -10,8 +10,10 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
-    <module>eureka-server</module>
     <module>eureka-server-1</module>
+    <module>order-server-1</module>
+    <module>user-server-1</module>
+    <module>order-server-2</module>
   </modules>
 
   <name>spring-cloud-demo-v2</name>
@@ -48,18 +50,6 @@
         <version>2.2.5.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-      <!-- mysql驱动 -->
-      <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.version}</version>
-      </dependency>
-      <!--mybatis-->
-      <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
-        <version>${mybatis.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
