@@ -16,7 +16,7 @@ public class UserController {
     @GetMapping("getUser")
     public String getUser() {
         //调用订单服务
-        String orderServerUrl = "http://orderServer-1/order/getOrder";
+        String orderServerUrl = "http://orderServer/order/getOrder";
         String orderResult = restTemplate.getForObject(orderServerUrl, String.class);
         System.out.println(orderResult);
         return "this is user server";

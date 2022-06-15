@@ -2,7 +2,7 @@ server:
   port: 8002 # 服务端口
 spring:
   application:
-    name: orderServer-2
+    name: orderServer
 eureka:
   client:
     service-url:  # eureka的地址信息
