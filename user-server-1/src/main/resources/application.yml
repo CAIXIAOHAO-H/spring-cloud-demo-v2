@@ -3,11 +3,21 @@ server:
 spring:
   application:
     name: userServer-1
-eureka:
-  client:
-    service-url:  # eureka的地址信息
-      defaultZone: http://127.0.0.1:7001/eureka
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
+      discovery:
+        cluster-name: GZ
+        namespace: fe759fbe-2521-4e46-b5de-d0d42ced734f
+        ephemeral: true
+#eureka:
+#  client:
+#    service-url:  # eureka的地址信息
+#      defaultZone: http://127.0.0.1:7001/eureka
 ribbon:
   eager-load:
     enabled: true
     clients: orderServer
+orderServer:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule  # 负载均衡规则

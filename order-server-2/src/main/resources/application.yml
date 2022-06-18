@@ -3,7 +3,14 @@ server:
 spring:
   application:
     name: orderServer
-eureka:
-  client:
-    service-url:  # eureka的地址信息
-      defaultZone: http://127.0.0.1:7001/eureka
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
+      discovery:
+        cluster-name: GZ
+        namespace: 5f43b233-277c-4bdd-aebe-93de26a0d849
+        ephemeral: true
+#eureka:
+#  client:
+#    service-url:  # eureka的地址信息
+#      defaultZone: http://127.0.0.1:7001/eureka
