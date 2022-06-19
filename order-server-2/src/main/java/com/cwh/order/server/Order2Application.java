@@ -1,13 +1,13 @@
-package com.cwh.order.server.two;
+package com.cwh.order.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrderApplication {
+public class Order2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderApplication.class, args);
+        SpringApplication.run(Order2Application.class, args);
     }
 
 }

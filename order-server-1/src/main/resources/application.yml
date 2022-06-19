@@ -1,15 +1,5 @@
 server:
   port: 8001 # 服务端口
-spring:
-  application:
-    name: orderServer
-  cloud:
-    nacos:
-      server-addr: http://127.0.0.1:8848
-      discovery:
-        cluster-name: GZ
-        namespace: fe759fbe-2521-4e46-b5de-d0d42ced734f
-        ephemeral: true
 #eureka:
 #  client:
 #    service-url:  # eureka的地址信息
