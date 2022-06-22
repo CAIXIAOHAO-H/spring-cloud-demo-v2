@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class OrderTwoController {
 
-    @Value("${test.common}")
+//    @Value("${test.common}")
     private String common;
 
     @GetMapping("/getOrder")

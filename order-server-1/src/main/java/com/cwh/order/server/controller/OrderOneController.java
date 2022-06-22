@@ -13,13 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class OrderOneController {
 
-    @Autowired
-    private RemoteConfig remoteConfig;
-
-    @Value("${test.name}")
+//    @Value("${test.name}")
     private String name;
 
-    @Value("${test.common}")
+//    @Value("${test.common}")
     private String common;
 
     @GetMapping("/getOrder")
