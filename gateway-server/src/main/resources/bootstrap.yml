@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gatewayServer
+  profiles:
+    active: dev # 环境
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
+      discovery:
+        cluster-name: GZ
+      config:
+        file-extension: yaml # 文件后缀名

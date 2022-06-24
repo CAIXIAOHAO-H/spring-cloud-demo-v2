@@ -15,6 +15,7 @@
     <module>user-server-1</module>
     <module>order-server-2</module>
       <module>feign-api</module>
+      <module>gateway-server</module>
   </modules>
 
   <name>spring-cloud-demo-v2</name>
