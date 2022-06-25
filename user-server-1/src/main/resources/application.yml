@@ -2,7 +2,7 @@ server:
   port: 6001 # 服务端口
 spring:
   application:
-    name: userServer-1
+    name: userServer
   cloud:
     nacos:
       server-addr: http://127.0.0.1:8848

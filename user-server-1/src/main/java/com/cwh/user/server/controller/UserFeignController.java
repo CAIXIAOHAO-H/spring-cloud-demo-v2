@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping("/user/feign")
 public class UserFeignController {
@@ -15,7 +17,7 @@ public class UserFeignController {
     private OrderServerFeignApi orderServerFeignApi;
 
     @GetMapping("getUser")
-    public String getUser() {
+    public String getUser(HttpServletRequest request) {
         //调用订单服务
         String order = orderServerFeignApi.getOrder();
         System.out.println(order);
