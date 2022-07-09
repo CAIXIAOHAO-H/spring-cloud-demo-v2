@@ -10,3 +10,7 @@ spring:
         cluster-name: GZ
       config:
         file-extension: yaml # 文件后缀名
+    sentinel:
+      transport:
+        dashboard: localhost:8849 # sentinel控制台地址
+      web-context-unify: false # 关闭context整合
